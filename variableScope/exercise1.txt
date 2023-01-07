@@ -1,0 +1,16 @@
+What will the following code print and why? Don't run it until you have tried 
+to answer.
+
+a = 7
+
+def my_value(b)
+  b += 10
+end
+
+my_value(a)
+puts a
+
+It will output 7. The method my_value does not change a, which it really 
+couldn't since a is in another scope. b points to a at first, but once it's 
+modified, it points to another point in memory equaling 17. Since a isn't 
+changed, 7 gets output at the end.
