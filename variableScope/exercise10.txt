@@ -1,0 +1,20 @@
+What will the following code print, and why? Don't run the code until you have 
+tried to answer.
+
+  a = 7
+  array = [1, 2, 3]
+
+  def my_value(ary)
+    ary.each do |b|
+      a += b
+    end
+  end
+
+  my_value(array)
+  puts a
+
+This program will not finish running. While a is referenced inside a block and 
+a block could have access to variables above it's scope, the block occurs in a 
+method which doesn't have access to variables outside it's scope. The block 
+would only have access to variables declared inside the method, and have no 
+idea what variables exist outside that.
