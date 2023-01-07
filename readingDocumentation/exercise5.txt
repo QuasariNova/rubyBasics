@@ -1,0 +1,10 @@
+Using the ruby documentation, determine how you can write large numbers in a 
+way that makes them easier to read.
+
+Under the literals page it says:
+ 
+ The underscore may be used to enhance readability for humans. You may place an 
+ underscore anywhere in the number.
+
+So you may write a number where the _ is where a comma would be. 9 million 
+could be 9_000_000 and still be valid syntax.
