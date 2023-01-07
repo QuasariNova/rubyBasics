@@ -1,0 +1,25 @@
+Assume you have the following code:
+
+  s = 'abc def ghi,jkl mno pqr,stu vwx yz'
+  puts s.split.inspect
+  puts s.split(',').inspect
+  puts s.split(',', 2).inspect
+
+What will each of the 3 puts statements print?
+
+s.split by default separates substrings by ' ' characters. So the first puts 
+statement should output
+
+  ['abc', 'def', 'ghi,jkl', 'mno', 'pqr,stu', 'vwx', 'yz']
+
+The second changes the field_sep parameter to ',', which means it will separate 
+the string by ',' instead of ' ' giving us this output:
+
+  ['abc def ghi', 'jkl mno pqr', 'vwx yz']
+
+The third sets the limit parameter, this makes it out put a number of strings 
+in the array <= the limit parameter. This means it performs limit - 1 splits. 
+In this case, it will split at the first comma and leave the rest of the string 
+as is. The output should be:
+
+  ['abc def ghi', 'jkl mno pqr,vwx yz']
