@@ -1,0 +1,5 @@
+Locate the description of the while loop in the ruby documentation.
+
+https://docs.ruby-lang.org/en/master/syntax/control_expressions_rdoc.html#label-while+Loop
+
+Can be found in your version of the API under the control_expressions page.
