@@ -1,0 +1,17 @@
+What will the following code print, and why? Don't run the code until you have 
+tried to answer.
+
+  a = "Xyzzy"
+
+  def my_value(b)
+    b = 'yzzyX'
+  end
+
+  my_value(a)
+  puts a
+
+Xyzzy
+
+This outputs that because, while we passed the string to the my_value method 
+and it can be mutated, assigning a new string to a variable does not mutate the 
+string that was previously referenced by that variable.
