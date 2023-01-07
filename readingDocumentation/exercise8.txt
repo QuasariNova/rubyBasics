@@ -1,0 +1,7 @@
+Use the ruby documentation for the String class to determine which method can 
+be used to right justify a String object.
+
+String#rjust is the method to be used to right justify a string. It takes an 
+integer, which is how many characters to pad on the left side of the string. It 
+also takes an optional string parameter to choose what the padding is. By 
+default the padding is a ' '.
