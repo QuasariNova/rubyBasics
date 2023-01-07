@@ -1,0 +1,18 @@
+What will the following code print, and why? Don't run the code until you have 
+tried to answer.
+
+  a = 7
+  array = [1, 2, 3]
+
+  array.each do |a|
+    a += 1
+  end
+
+  puts a
+
+7
+The array defines another variable named a in it's inner scope. Due to this, it 
+overrides the outer scope's a inside the block and doesn't apply anything to 
+it. As such a in the outer scope stays 7.
+
+The solution introduces the word Shadowing to describe this.
