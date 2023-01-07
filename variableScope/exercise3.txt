@@ -1,0 +1,13 @@
+What will the following code print, and why? Don't run the code until you have 
+tried to answer.
+
+  a = 7
+
+  def my_value(b)
+    a = b
+  end
+
+  my_value(a + 5)
+  puts a
+
+This is like the previous two examples in that it will output 7. my_value does not have access to the scope in which a was initialized, thus initializing an a in it's scope just creates a new variable in it's scope. 
