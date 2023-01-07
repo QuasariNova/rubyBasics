@@ -1,0 +1,14 @@
+What will the following code print, and why? Don't run the code until you have 
+tried to answer.
+
+  array = [1, 2, 3]
+
+  array.each do |element|
+    a = element
+  end
+
+  puts a
+
+This will not complete running. a is not initialized in the outer scope, so a 
+being initialized in the blocks scope only applies to the block. As such when 
+we try to puts a, it can't find a variable with that name and throws an error.
