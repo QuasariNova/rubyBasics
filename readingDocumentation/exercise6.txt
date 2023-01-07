@@ -1,0 +1,7 @@
+Using the ruby documentation, determine how you would write a Symbol that 
+represents your name. We aren't looking for a String; we want a Symbol, which 
+is one of ruby's datatypes.
+
+In the literals page, it says that you can define a symbol by :"name" if the 
+name used to define the symbol has no spaces, you can leave off the ". It works 
+with string interpolation too.
