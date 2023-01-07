@@ -1,0 +1,5 @@
+Where can you find the most complete Ruby documentation?
+
+https://ruby-doc.org is where you can find documentation for Ruby.
+
+The solution mentions https://docs.ruby-lang.org/en/ is the preferred spot for documentation now, but both are acceptable.
