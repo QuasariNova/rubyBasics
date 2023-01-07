@@ -1,0 +1,17 @@
+What will the following code print, and why? Don't run the code until you have 
+tried to answer.
+
+  a = 7
+
+  def my_value(a)
+    a += 10
+  end
+
+  my_value(a)
+  puts a
+
+It will output 7. Like exercise 1, the my_value method does not have access to 
+the outer scopes a, it instead defines another variable inside it's scope that 
+is a. Just because the variables have the same name, doesn't mean that they are 
+the same due to scoping. Since my_value can't mutate a in the outer scope, this 
+has to output 7.
