@@ -1,0 +1,4 @@
+Using the ruby documentation, determine what value a while loop returns.
+
+while returns nil, unless a break is used to exit and in that case, it returns 
+whatever was passed to break.
