@@ -1,0 +1,20 @@
+What will the following code print, and why? Don't run the code until you have 
+tried to answer.
+
+  a = "Xyzzy"
+
+  def my_value(b)
+    b[2] = '-'
+  end
+
+  my_value(a)
+  puts a
+
+Xy-zy is what is output. When you pass a string, it's really passing a pointer 
+to the start of the string in address memory. Altering the string mutates it 
+for all references, while initializing a new string wouldn't effect other 
+strings. Since we are changing the character at index 2, this mutates the 
+string passed to the method, giving us Xy-zy.
+
+Instead of explaining memory as I'm not 100% on that, it's probably better to 
+explain it as numbers being immutable and strings not.
