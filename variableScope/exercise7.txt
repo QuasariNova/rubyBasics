@@ -1,0 +1,16 @@
+What will the following code print, and why? Don't run the code until you have 
+tried to answer.
+
+  a = 7
+  array = [1, 2, 3]
+
+  array.each do |element|
+    a = element
+  end
+
+  puts a
+
+3
+This is now using a block instead of a method. Blocks have access to variables 
+scoped in higher levels, so this will assign 1, then 2, and finally 3 to a, 
+which it then prints to the screen.
