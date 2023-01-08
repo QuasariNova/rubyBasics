@@ -1,0 +1,21 @@
+What will the following code print? Why? Don't run it until you've attempted to 
+answer.
+
+def tricky_number
+  if true
+    number = 1
+  else
+    2
+  end
+end
+
+puts tricky_number
+
+Output should be:
+
+  1
+
+The if in tricky_number will always evaluate as true, so the final expression 
+of the method will always be number = 1. Assignment evaluates as the value on 
+the right side, so it will implicitly return 1. puts is passed this, so it 
+prints 1 to the screen.
