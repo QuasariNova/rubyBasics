@@ -1,0 +1,27 @@
+What will the following code print? Why? Don't run it until you've attempted to 
+answer.
+
+  def count_sheep
+    5.times do |sheep|
+      puts sheep
+    end
+  end
+
+  puts count_sheep
+
+Output Probably:
+
+  0
+  1
+  2
+  3
+  4
+  5
+
+  The program begins by invoking count_sheep to pass it's return value to puts. 
+  The count_sheep method uses the Integer#times method to iterate over 0...
+  integer in this case it stores the current iterator in sheep and puts that 
+  value, thus printing on a new line each 0, 1, 2, 3, 4. The Integer#times 
+  method returns the Caller, in this case the integer literal 5. This is the 
+  last expression in the method, thus is returned by count_sheep and passed to 
+  the puts method, printing 5 on the screen.
