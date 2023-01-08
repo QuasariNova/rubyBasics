@@ -1,0 +1,18 @@
+What will the following code print? Why? Don't run it until you've attempted to 
+answer.
+
+  def meal
+    'Dinner'
+    puts 'Dinner'
+  end
+
+  p meal
+
+Output should be:
+Dinner
+nil
+
+The meal method's first line, while evaluating to 'Dinner' does effect the 
+methods return value as it's not the last line. The puts after it will display 
+Dinner on the screen and then return nil. Since meal was invoked and passed to 
+the p method, that means nil will be printed to the screen after Dinner.
