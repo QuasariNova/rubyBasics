@@ -1,0 +1,12 @@
+What will the following code print? Why? Don't run it until you've attempted to 
+answer.
+
+  def meal
+    return 'Breakfast'
+  end
+
+  puts meal
+
+The last line calls the puts method, passing the value returned by invoking 
+meal. The meal method explicitly returns the string 'Breakfast', so Breakfast 
+will be printed to the screen. 
