@@ -1,0 +1,12 @@
+What will the following code print? Why? Don't run it until you've attempted to 
+answer.
+
+  def meal
+    'Evening'
+  end
+
+  puts meal
+
+The last line invokes puts passing the value returned by invoking meal. The 
+meal method implicitly returns 'Evening', so Evening would be printed to the 
+screen.
