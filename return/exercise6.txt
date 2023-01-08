@@ -1,0 +1,19 @@
+What will the following code print? Why? Don't run it until you've attempted to 
+answer.
+
+  def meal
+    return 'Breakfast'
+    'Dinner'
+    puts 'Dinner'
+  end
+
+  puts meal
+
+Output probably is:
+
+  Breakfast
+
+The program invokes the meal method then passes it to a puts method. The meal 
+method explicitly returns 'Breakfast' before doing anything else, so that is 
+all the method does. 'Breakfast' is passed to the puts, so it will be printed 
+on the screen.
