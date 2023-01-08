@@ -1,0 +1,36 @@
+You come across the following code. What errors does it raise for the given
+examples and what exactly do the error messages mean?
+
+  def find_first_nonzero_among(numbers)
+    numbers.each do |n|
+      return n if n.nonzero?
+    end
+  end
+
+  # Examples
+
+  find_first_nonzero_among(0, 0, 1, 0, 2, 0)
+  find_first_nonzero_among(1)
+
+The first error given is:
+
+  1: from test.rb:23:in `<main>'
+  test.rb:15:in `find_first_nonzero_among': wrong number of arguments (given 6,
+  expected 1) (ArgumentError)
+
+When it find_first_nonzero_among  is called on line 9, it is defined expecting a
+n array as it's only argument. You can fix this by passing:
+
+  [0, 0, 1, 0, 2, 0]
+
+Once you do that, it will return 1 for the first call.
+
+Now, the second call also generates an error, once we fix the first one:
+
+  1: from test.rb:10:in `<main>'
+  test.rb:2:in `find_first_nonzero_among': undefined method `each' for
+  1:Integer (NoMethodError)
+
+This one is because we passed an integer on the second call, when we were
+expecting an array. Arrays have the #each method, Integers do not. passing [1]
+instead fixes the error and the code runs.
