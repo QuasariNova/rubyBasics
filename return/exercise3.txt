@@ -1,0 +1,13 @@
+What will the following code print? Why? Don't run it until you've attempted to 
+answer.
+
+  def meal
+    return 'Breakfast'
+    'Dinner'
+  end
+
+  puts meal
+
+The meal method explicitly returns 'Breakfast', so it will never implicitly 
+return 'Dinner'. The puts method at the end is passed the return of meal, so 
+Breakfast will be output on the screen.
