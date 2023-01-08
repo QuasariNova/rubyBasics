@@ -1,0 +1,25 @@
+What will the following code print? Why? Don't run it until you've attempted to 
+answer.
+
+  def count_sheep
+    5.times do |sheep|
+      puts sheep
+    end
+    10
+  end
+
+  puts count_sheep
+
+Probable Output:
+  0
+  1
+  2
+  3
+  4
+  10
+
+This is just like exercise7, but instead of the last expression of the 
+count_sheep method being the Integer#times method, it is the literal 10. This 
+means that 10 will be returned implicitly and passed to the last puts. So the 
+count_sheep method prints 0, 1, 2, 3, then 4 on their own lines and the final 
+puts prints 10.
